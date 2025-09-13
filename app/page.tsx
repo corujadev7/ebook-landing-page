@@ -68,7 +68,7 @@ export default function AudiobookLandingPage() {
           <div className="mb-8 flex justify-center">
             <div className="relative max-w-2xl w-full">
               <div className="relative w-full" style={{ aspectRatio: "9/16" }}>
-               <wistia-player media-id="wune0rmsby" aspect="0.5625"></wistia-player>
+                <wistia-player media-id="wune0rmsby" aspect="0.5625"></wistia-player>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function AudiobookLandingPage() {
       {/* Benefits Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-card">
             Por que escolher nossa biblioteca digital?
           </h2>
 
@@ -115,7 +115,7 @@ export default function AudiobookLandingPage() {
             <Card className="text-center p-6 border-border hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <Headphones className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-card-foreground">200+ Áudios Exclusivos</h3>
+                <h3 className="font-semibold mb-2 text-muted-foreground">200+ Áudios Exclusivos</h3>
                 <p className="text-sm text-muted-foreground">
                   Acesso instantâneo aos melhores resumos em áudio dos maiores best-sellers
                 </p>
@@ -125,7 +125,7 @@ export default function AudiobookLandingPage() {
             <Card className="text-center p-6 border-border hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <BookOpen className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-card-foreground">3.500 PDFs de Bônus</h3>
+                <h3 className="font-semibold mb-2 text-muted-foreground">3.500 PDFs de Bônus</h3>
                 <p className="text-sm text-muted-foreground">
                   Biblioteca completa organizada por categorias para consulta rápida
                 </p>
@@ -135,7 +135,7 @@ export default function AudiobookLandingPage() {
             <Card className="text-center p-6 border-border hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-card-foreground">Economia de Tempo</h3>
+                <h3 className="font-semibold mb-2 text-muted-foreground">Economia de Tempo</h3>
                 <p className="text-sm text-muted-foreground">
                   Resumos práticos que capturam a essência de cada livro em minutos
                 </p>
@@ -145,7 +145,7 @@ export default function AudiobookLandingPage() {
             <Card className="text-center p-6 border-border hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-card-foreground">Transformação Comprovada</h3>
+                <h3 className="font-semibold mb-2 text-muted-foreground">Transformação Comprovada</h3>
                 <p className="text-sm text-muted-foreground">
                   Conhecimento aplicável para evolução pessoal e financeira real
                 </p>
@@ -154,11 +154,17 @@ export default function AudiobookLandingPage() {
           </div>
         </div>
       </section>
+      {/* Product Image */}
+      <section className="py-16 px-4">
+        <div className="flex justify-center">
+          <img className="w-150 h-150" src="/5.png" />
+        </div>
+      </section>
 
       {/* Book Library Section */}
-      <section className="bg-card py-16 px-4">
+      <section className="  bg-card py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-card-foreground">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-muted-foreground">
             Alguns livros inclusos na biblioteca
           </h2>
           <p className="text-lg text-muted-foreground text-center mb-12 text-pretty">
@@ -166,82 +172,30 @@ export default function AudiobookLandingPage() {
             esperando por você.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="p-6 border-border hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 flex justify-center">
-                  <img
-                    src="/do-mil-ao-milhao-book-cover.png"
-                    alt="Capa do livro Do Mil ao Milhão, escrito por Thiago Nigro"
-                    className="w-48 h-64 object-cover rounded-md shadow-md"
-                    loading="lazy"
-                  />
-                </div>
-
-                <Badge variant="secondary" className="mb-3">
-                  Finanças
-                </Badge>
-
-                <h2 className="font-bold text-lg mb-1 text-card-foreground">
-                  Do Mil ao Milhão
-                </h2>
-                <p className="text-sm text-muted-foreground">Thiago Nigro</p>
-              </CardContent>
-            </Card>
-
-
-            <Card className="p-6 border-border hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 flex justify-center">
-                  <img
-                    src="/7-habitos-book-cover.png"
-                    alt="Capa do livro Os 7 Hábitos das Pessoas Altamente Eficazes de Stephen R. Covey"
-                    className="w-48 h-64 object-cover rounded-md shadow-md"
-                  />
-                </div>
-                <Badge variant="secondary" className="mb-4">
-                  Desenvolvimento Pessoal
-                </Badge>
-                <h3 className="font-bold text-lg mb-2 text-card-foreground">
-                  Os 7 Hábitos das Pessoas Altamente Eficazes
-                </h3>
-                <p className="text-sm text-muted-foreground">Stephen R. Covey</p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 border-border hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 flex justify-center">
-                  <img
-                    src="/pai-rico-pai-pobre-book-cover.png"
-                    alt="Capa do livro Pai Rico Pai Pobre de Robert T. Kiyosaki"
-                    className="w-48 h-64 object-cover rounded-md shadow-md"
-                  />
-                </div>
-                <Badge variant="secondary" className="mb-4">
-                  Educação Financeira
-                </Badge>
-                <h3 className="font-bold text-lg mb-2 text-card-foreground">Pai Rico Pai Pobre</h3>
-                <p className="text-sm text-muted-foreground">Robert T. Kiyosaki</p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 border-border hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="mb-4 flex justify-center">
-                  <img
-                    src="/quem-pensa-enriquece-book-cover.png"
-                    alt="Capa do livro Quem Pensa Enriquece de Napoleon Hill"
-                    className="w-48 h-64 object-cover rounded-md shadow-md"
-                  />
-                </div>
-                <Badge variant="secondary" className="mb-4">
-                  Mindset
-                </Badge>
-                <h3 className="font-bold text-lg mb-2 text-card-foreground">Quem Pensa Enriquece</h3>
-                <p className="text-sm text-muted-foreground">Napoleon Hill</p>
-              </CardContent>
-            </Card>
+          <div className=" flex justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="/book-1.jpg" alt="Sunset in the mountains" />
+            </div>
+            {/* livro 2 */}
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="/book-2.jpg" alt="Sunset in the mountains" />
+            </div>
+            {/* Livro 3 */}
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="/book-3.jpg" alt="Sunset in the mountains" />
+            </div>
+            {/* Livro 3 */}
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="/book-4.jpg" alt="Sunset in the mountains" />
+            </div>
+            {/* Livro 3 */}
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="/book-5.jpg" alt="Sunset in the mountains" />
+            </div>
+            {/* Livro 3 */}
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="/book-6.jpg" alt="Sunset in the mountains" />
+            </div>
           </div>
         </div>
       </section>
@@ -249,7 +203,7 @@ export default function AudiobookLandingPage() {
       {/* Authority Section */}
       <section className="bg-card py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-card-foreground">Sobre Nossa Missão</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-muted-foreground">Sobre Nossa Missão</h2>
           <p className="text-lg text-muted-foreground mb-8 text-pretty">
             Nossa missão é democratizar o acesso ao conhecimento dos maiores best-sellers do mundo. Reunimos uma equipe
             de especialistas para criar resumos de alta qualidade que capturam a essência de cada obra, permitindo que
@@ -275,7 +229,7 @@ export default function AudiobookLandingPage() {
       {/* Social Proof Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-card">
             O que nossos clientes dizem
           </h2>
 
@@ -296,7 +250,7 @@ export default function AudiobookLandingPage() {
                     M
                   </div>
                   <div>
-                    <div className="font-semibold text-card-foreground">Maria Silva</div>
+                    <div className="font-semibold text-muted-foreground">Maria Silva</div>
                     <div className="text-xs text-muted-foreground">Empresária</div>
                   </div>
                 </div>
@@ -319,7 +273,7 @@ export default function AudiobookLandingPage() {
                     J
                   </div>
                   <div>
-                    <div className="font-semibold text-card-foreground">João Santos</div>
+                    <div className="font-semibold text-muted-foreground">João Santos</div>
                     <div className="text-xs text-muted-foreground">Executivo</div>
                   </div>
                 </div>
@@ -342,7 +296,7 @@ export default function AudiobookLandingPage() {
                     A
                   </div>
                   <div>
-                    <div className="font-semibold text-card-foreground">Ana Costa</div>
+                    <div className="font-semibold text-muted-foreground">Ana Costa</div>
                     <div className="text-xs text-muted-foreground">Consultora</div>
                   </div>
                 </div>
@@ -354,17 +308,58 @@ export default function AudiobookLandingPage() {
 
       {/* Offer Section */}
       <section id="offer" className="bg-card py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-card-foreground">Oferta Especial - Apenas Hoje!</h2>
+        <div className="max-w-4xl mx-auto text-center ">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-muted-foreground">Oferta Especial - Apenas Hoje!</h2>
+          <div className="max-w-sm mx-auto bg-[#0c0f2d] border border-yellow-400 rounded-2xl p-6 text-white shadow-lg mb-8">
+            {/* Tag topo */}
+            <div className="text-center bg-yellow-600 text-black font-semibold rounded-lg px-3 py-1 w-fit mb-8">
+              👑 MAIS VENDIDO
+            </div>
 
-          <div className="bg-background border-2 border-primary rounded-lg p-8 mb-8">
-            <div className="text-sm text-muted-foreground mb-2">Valor normal na Amazon:</div>
-            <div className="text-2xl text-muted-foreground line-through mb-4">R$ 297,00</div>
+            {/* Título */}
+            {/* <h2 className="text-2xl font-bold mb-2">👑 Pacote Premium</h2> */}
+
+            {/* Preço */}
+            <p className="text-5xl font-bold text-yellow-400 mb-4">R$ 19,90</p>
+
+            {/* Benefícios */}
+            <div className="bg-yellow-600/80 text-black font-semibold rounded-lg px-3 py-2 mb-4">
+              ✅ Tudo do Essencial, mais:
+            </div>
+
+            <ul className="space-y-2 text-sm">
+              <li>• +3.500 livros digitais exclusivos</li>
+              <li>• Desenvolvimento pessoal, negócios, liderança e produtividade</li>
+              <li>• 200 áudios adicionados por mês</li>
+              <li>• 200 novos livros digitais lançamentos todo mês</li>
+              <li>• 7 coleções exclusivas organizadas</li>
+              <li>• Entrega automática no e-mail</li>
+              <li>• Acesso vitalício</li>
+              <li>• Suporte por WhatsApp</li>
+              <li>• Garantia de 7 dias</li>
+            </ul>
+
+            {/* Botão */}
+            <button className="mt-6 w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 rounded-lg transition"
+            onClick={()=> window.location.href='https://pay.cakto.com.br/rfyes75_550088'}
+            >
+              GARANTIR ACESSO AGORA
+            </button>
+
+            {/* Rodapé */}
+            <p className="text-center text-xs text-gray-400 mt-3">
+              +935 pessoas já escolheram este pacote
+            </p>
+          </div>
+
+          {/* <div className="bg-background border-2 border-primary rounded-lg p-8 mb-8">
+            <div className="text-sm text-card mb-2">Valor normal na Amazon:</div>
+            <div className="text-2xl text-card line-through mb-4">R$ 297,00</div>
 
             <div className="text-sm text-accent font-semibold mb-2">Seu preço hoje:</div>
             <div className="text-4xl md:text-5xl font-bold text-primary mb-4">R$ 19,90</div>
 
-            <div className="text-sm text-muted-foreground mb-6">Economia de R$ 277,10 (93% de desconto)</div>
+            <div className="text-sm text-card mb-6">Economia de R$ 277,10 (93% de desconto)</div>
 
             <Button
               size="lg"
@@ -376,22 +371,22 @@ export default function AudiobookLandingPage() {
               </a>
             </Button>
 
-            <div className="text-xs text-muted-foreground">Pagamento seguro • Acesso imediato • Garantia de 7 dias</div>
-          </div>
+            <div className="text-xs text-card">Pagamento seguro • Acesso imediato • Garantia de 7 dias</div>
+          </div> */}
 
           {/* Countdown Timer */}
           <div className="bg-accent/10 border border-accent rounded-lg p-6 mb-8">
             <h3 className="text-lg font-semibold text-accent mb-4">⏰ Oferta expira em:</h3>
             <div className="flex justify-center gap-4 text-center">
-              <div className="bg-accent text-accent-foreground rounded-lg p-3 min-w-[60px]">
+              <div className="bg-accent text-card rounded-lg p-3 min-w-[60px]">
                 <div className="text-2xl font-bold">{timeLeft.hours.toString().padStart(2, "0")}</div>
                 <div className="text-xs">Horas</div>
               </div>
-              <div className="bg-accent text-accent-foreground rounded-lg p-3 min-w-[60px]">
+              <div className="bg-accent text-card rounded-lg p-3 min-w-[60px]">
                 <div className="text-2xl font-bold">{timeLeft.minutes.toString().padStart(2, "0")}</div>
                 <div className="text-xs">Min</div>
               </div>
-              <div className="bg-accent text-accent-foreground rounded-lg p-3 min-w-[60px]">
+              <div className="bg-accent text-card rounded-lg p-3 min-w-[60px]">
                 <div className="text-2xl font-bold">{timeLeft.seconds.toString().padStart(2, "0")}</div>
                 <div className="text-xs">Seg</div>
               </div>
@@ -401,9 +396,10 @@ export default function AudiobookLandingPage() {
       </section>
 
       {/* Guarantee Section */}
-      <section className="py-16 px-4 bg-accent/5">
+      <section className="py-16 px-4 bg-accent/5 bg-card">
         <div className="max-w-4xl mx-auto text-center">
-          <Shield className="w-16 h-16 text-accent mx-auto mb-6" />
+          {/* <Shield className="w-16 h-16 text-accent mx-auto mb-6" /> */}
+          <div className="flex justify-center mb-6"><img className="h-80 w-80 object-center" src="/badge-7.png" /></div>
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">Garantia Incondicional de 7 Dias</h2>
           <p className="text-lg text-muted-foreground text-pretty">
             Teste por 7 dias. Se não gostar, devolvemos 100% do valor sem perguntas. Nosso compromisso é com sua
@@ -413,9 +409,9 @@ export default function AudiobookLandingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4">
+      <section className="bg-card py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-foreground">Perguntas Frequentes</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-muted-foregroud">Perguntas Frequentes</h2>
 
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border border-border rounded-lg px-6">
@@ -473,7 +469,7 @@ export default function AudiobookLandingPage() {
 
           <Button
             size="lg"
-            className="bg-background hover:bg-background/90 text-foreground font-bold px-6 md:px-8 py-4 rounded-lg text-base md:text-lg mb-4 w-full sm:w-auto max-w-md mx-auto"
+            className="bg-background hover:bg-background/90 text-card font-bold px-6 md:px-8 py-4 rounded-lg text-base md:text-lg mb-4 w-full sm:w-auto max-w-md mx-auto"
             asChild
           >
             <a href="https://pay.cakto.com.br/rfyes75_550088" target="_blank" rel="noopener noreferrer">
@@ -488,7 +484,7 @@ export default function AudiobookLandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground py-12 px-4">
+      <footer className="bg-card py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>

@@ -5,8 +5,8 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.22 0 0);
-  --card: oklch(0.98 0.02 142);
+  --foreground: oklch(100% 0.00011 271.152);
+  --card: rgb(18, 27, 49);
   --card-foreground: oklch(0.22 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.22 0 0);
@@ -16,9 +16,9 @@
   --secondary: oklch(0.98 0.02 142);
   --secondary-foreground: oklch(0.22 0 0);
   --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.45 0 0);
+  --muted-foreground: oklch(95.514% 0.00011 271.152);
   /* Updated accent to bright green for highlights */
-  --accent: oklch(0.7 0.18 130);
+  --accent: oklch(73.444% 0.15848 113.801);
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
